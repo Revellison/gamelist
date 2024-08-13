@@ -1,0 +1,292 @@
+body
+{
+   background-color: #2D2D2D;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#wb_LayoutGrid3
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #3C3C3C;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+#LayoutGrid3
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 5px 0 5px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid3 > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid3 > .col-1
+{
+   flex: 0 0 auto;
+}
+#LayoutGrid3 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid3 > .col-1
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 30px 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 50%;
+   text-align: left;
+}
+#LayoutGrid2 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 50%;
+   text-align: left;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_Section1
+{
+   height: 108px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   margin: 0;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 12px;
+   text-align: center;
+}
+#Section1-card-body
+{
+   flex: 1 1 auto;
+   font-size: 0;
+}
+#Section1-card-item0
+{
+   display: inline-flex;
+   align-items: center;
+   box-sizing: border-box;
+   margin: 0;
+   position: absolute;
+   left: 0%;
+   top: 0%;
+   height: 100%;
+   width: 24%;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 13px;
+   background-color: transparent;
+   background-image: url('../images/Minecraft_Bedrock_icon.png');
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   justify-content: center;
+   text-align: center;
+}
+#Section1-card-item1
+{
+   box-sizing: border-box;
+   margin: 0;
+   position: absolute;
+   left: 50.1%;
+   top: 7.4%;
+   height: 24.1%;
+   width: 29.9%;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Section1-card-item2
+{
+   box-sizing: border-box;
+   border-radius: 0 0 12px 12px !important;
+   margin: 0;
+   position: absolute;
+   left: 49.9%;
+   top: 59.3%;
+   height: 22.2%;
+   width: 29.9%;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#wb_Section1:hover
+{
+   transform: rotateX(0deg) rotateY(15deg) ;
+   background-color: #FFFFFF;
+   transition: transform 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 100ms, background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 100ms;
+}
+#wb_Section1
+{
+   transform: rotateX(0deg) ;
+   transition: transform 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 100ms, all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 100ms;
+}
+#wb_Icon2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #696969;
+   border-radius: 0px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_Icon2 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#wb_Icon2:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #A9A9A9;
+}
+#Icon2
+{
+   height: 39px;
+   width: 33px;
+}
+#Icon2 i
+{
+   color: #A9A9A9;
+   display: inline-block;
+   font-size: 33px;
+   line-height: 39px;
+   vertical-align: middle;
+   width: 32px;
+}
+#wb_Icon2:hover #Icon2 i
+{
+   color: #F5F5F5;
+}
