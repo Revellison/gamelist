@@ -1,0 +1,1976 @@
+body
+{
+   background-color: #2D2D2D;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+#wb_categoriesLayoutGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#categoriesLayoutGrid1
+{
+   box-sizing: border-box;
+   padding: 10px 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#categoriesLayoutGrid1 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#categoriesLayoutGrid1 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#categoriesLayoutGrid1 > .row > .col-1
+{
+   float: left;
+}
+#categoriesLayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#categoriesLayoutGrid1 > .row > .col-1 > .col-1-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 20px 0 20px 0;
+}
+#categoriesLayoutGrid1:before,
+#categoriesLayoutGrid1:after,
+#categoriesLayoutGrid1 .row:before,
+#categoriesLayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#categoriesLayoutGrid1:after,
+#categoriesLayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#categoriesLayoutGrid1 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_categoriesLayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#categoriesLayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 0 10px 20px 10px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#categoriesLayoutGrid2 > .row
+{
+   margin-right: -10px;
+   margin-left: -10px;
+}
+#categoriesLayoutGrid2 > .row > .col-1, #categoriesLayoutGrid2 > .row > .col-2, #categoriesLayoutGrid2 > .row > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 10px;
+   padding-left: 10px;
+   position: relative;
+}
+#categoriesLayoutGrid2 > .row > .col-1, #categoriesLayoutGrid2 > .row > .col-2, #categoriesLayoutGrid2 > .row > .col-3
+{
+   float: left;
+}
+#categoriesLayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 33.33333333%;
+   text-align: center;
+}
+#categoriesLayoutGrid2 > .row > .col-1 > .col-1-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0 0 10px 0;
+}
+#categoriesLayoutGrid2 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 33.33333333%;
+   text-align: left;
+}
+#categoriesLayoutGrid2 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 33.33333333%;
+   text-align: left;
+}
+#categoriesLayoutGrid2:before,
+#categoriesLayoutGrid2:after,
+#categoriesLayoutGrid2 .row:before,
+#categoriesLayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#categoriesLayoutGrid2:after,
+#categoriesLayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#categoriesLayoutGrid2 > .row > .col-1, #categoriesLayoutGrid2 > .row > .col-2, #categoriesLayoutGrid2 > .row > .col-3
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_trendingLayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#trendingLayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 50px 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#trendingLayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#trendingLayoutGrid2 > .row > .col-1, #trendingLayoutGrid2 > .row > .col-2, #trendingLayoutGrid2 > .row > .col-3, #trendingLayoutGrid2 > .row > .col-4
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#trendingLayoutGrid2 > .row > .col-1, #trendingLayoutGrid2 > .row > .col-2, #trendingLayoutGrid2 > .row > .col-3, #trendingLayoutGrid2 > .row > .col-4
+{
+   float: left;
+}
+#trendingLayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: center;
+}
+#trendingLayoutGrid2 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: left;
+}
+#trendingLayoutGrid2 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: left;
+}
+#trendingLayoutGrid2 > .row > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: left;
+}
+#trendingLayoutGrid2:before,
+#trendingLayoutGrid2:after,
+#trendingLayoutGrid2 .row:before,
+#trendingLayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#trendingLayoutGrid2:after,
+#trendingLayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#trendingLayoutGrid2 > .row > .col-1, #trendingLayoutGrid2 > .row > .col-2, #trendingLayoutGrid2 > .row > .col-3, #trendingLayoutGrid2 > .row > .col-4
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_trendingLayoutGrid3
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#trendingLayoutGrid3
+{
+   box-sizing: border-box;
+   padding: 20px 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#trendingLayoutGrid3 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#trendingLayoutGrid3 > .row > .col-1, #trendingLayoutGrid3 > .row > .col-2, #trendingLayoutGrid3 > .row > .col-3, #trendingLayoutGrid3 > .row > .col-4
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#trendingLayoutGrid3 > .row > .col-1, #trendingLayoutGrid3 > .row > .col-2, #trendingLayoutGrid3 > .row > .col-3, #trendingLayoutGrid3 > .row > .col-4
+{
+   float: left;
+}
+#trendingLayoutGrid3 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: center;
+}
+#trendingLayoutGrid3 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: left;
+}
+#trendingLayoutGrid3 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: left;
+}
+#trendingLayoutGrid3 > .row > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 25%;
+   text-align: left;
+}
+#trendingLayoutGrid3:before,
+#trendingLayoutGrid3:after,
+#trendingLayoutGrid3 .row:before,
+#trendingLayoutGrid3 .row:after
+{
+   display: table;
+   content: " ";
+}
+#trendingLayoutGrid3:after,
+#trendingLayoutGrid3 .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#trendingLayoutGrid3 > .row > .col-1, #trendingLayoutGrid3 > .row > .col-2, #trendingLayoutGrid3 > .row > .col-3, #trendingLayoutGrid3 > .row > .col-4
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_categoriesText1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 5px 0 0 0;
+   margin: 0;
+   text-align: center;
+   animation: pop 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+#wb_categoriesText1 div
+{
+   text-align: center;
+}
+#wb_categoriesText1
+{
+   display: inline-block;
+   margin: 0;
+   width: 317px;
+   height: 21px;
+}
+#wb_categoriesImage1
+{
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#categoriesImage1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #808080;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 650px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#categoriesImage1-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#categoriesImage1
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#categoriesImage1:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_categoriesText2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 10px 0 0 0;
+   margin: 0;
+   text-align: center;
+   animation: pop 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+#wb_categoriesText2 div
+{
+   text-align: center;
+}
+#wb_categoriesText2
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_categoriesImage3
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#categoriesImage3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: scale-down;
+}
+#categoriesImage3-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#categoriesImage3
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#categoriesImage3:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image1
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image1-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image1
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image1:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image2
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image2-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image2
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image2:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image3
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image3-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image3
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image3:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image4
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image4
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image4-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image4
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image4:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image6
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image6
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image6-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image6
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image6:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image7
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image7
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image7-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image7
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image7:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_Image8
+{
+   height: 100%;
+   margin: 0;
+   position: relative;
+   vertical-align: top;
+}
+#Image8
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px #000000;
+   display: block;
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+   object-fit: cover;
+}
+#Image8-overlay
+{
+   position: absolute;
+   pointer-events: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: rgba(255,255,255,1.00);
+   color: #000000;
+   opacity: 0.78;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+   padding: 8px 16px 8px 16px;
+   text-align: center;
+}
+#Image8
+{
+   filter: brightness(100%);
+   transition: filter 500ms linear 0ms;
+}
+#Image8:hover
+{
+   filter: brightness(50%);
+   transition: filter 500ms linear 0ms;
+}
+#wb_trendingCard1, .trendingCard1
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#trendingCard1-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#trendingCard1-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#trendingCard1-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#trendingCard1-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#trendingCard1-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#trendingCard1-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .trendingCard1
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.trendingCard1.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.trendingCard1.popover .popover-arrow::before, .trendingCard1.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.trendingCard1.bs-popover-end, .trendingCard1.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.trendingCard1.bs-popover-end > .popover-arrow, .trendingCard1.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.trendingCard1.bs-popover-end > .popover-arrow::before, .trendingCard1.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.trendingCard1.bs-popover-end > .popover-arrow::after, .trendingCard1.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_trendingCard1:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_trendingCard1
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Layer1
+{
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('../images/gamelist_Layer1_bkgrnd.png');
+   background-repeat: repeat;
+   background-position: left top;
+   border-radius: 0px;
+}
+#Layer1:hover
+{
+   top: #FF0000px;
+   transition: top 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card8, .Card8
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card8-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card8-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card8-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card8-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card8-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card8-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card8
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card8.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card8.popover .popover-arrow::before, .Card8.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card8.bs-popover-end, .Card8.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card8.bs-popover-end > .popover-arrow, .Card8.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card8.bs-popover-end > .popover-arrow::before, .Card8.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card8.bs-popover-end > .popover-arrow::after, .Card8.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card8:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card8
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card1, .Card1
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card1-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card1-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card1-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card1-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card1-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card1-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card1
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card1.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card1.popover .popover-arrow::before, .Card1.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card1.bs-popover-end, .Card1.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card1.bs-popover-end > .popover-arrow, .Card1.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card1.bs-popover-end > .popover-arrow::before, .Card1.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card1.bs-popover-end > .popover-arrow::after, .Card1.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card1:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card1
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card2, .Card2
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card2-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card2-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card2-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card2-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card2-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card2-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card2
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card2.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card2.popover .popover-arrow::before, .Card2.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card2.bs-popover-end, .Card2.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card2.bs-popover-end > .popover-arrow, .Card2.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card2.bs-popover-end > .popover-arrow::before, .Card2.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card2.bs-popover-end > .popover-arrow::after, .Card2.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card2:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card2
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card3, .Card3
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card3-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card3-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card3-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card3-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card3-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card3-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card3
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card3.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card3.popover .popover-arrow::before, .Card3.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card3.bs-popover-end, .Card3.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card3.bs-popover-end > .popover-arrow, .Card3.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card3.bs-popover-end > .popover-arrow::before, .Card3.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card3.bs-popover-end > .popover-arrow::after, .Card3.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card3:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card3
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card4, .Card4
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card4-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card4-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card4-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card4-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card4-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card4-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card4
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card4.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card4.popover .popover-arrow::before, .Card4.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card4.bs-popover-end, .Card4.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card4.bs-popover-end > .popover-arrow, .Card4.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card4.bs-popover-end > .popover-arrow::before, .Card4.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card4.bs-popover-end > .popover-arrow::after, .Card4.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card4:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card4
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card5, .Card5
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card5-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card5-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card5-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card5-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card5-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card5-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card5
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card5.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card5.popover .popover-arrow::before, .Card5.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card5.bs-popover-end, .Card5.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card5.bs-popover-end > .popover-arrow, .Card5.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card5.bs-popover-end > .popover-arrow::before, .Card5.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card5.bs-popover-end > .popover-arrow::after, .Card5.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card5:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card5
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card6, .Card6
+{
+   box-sizing: border-box;
+   margin: 0 0 20px 0 ;
+   animation: focus-in 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 0px;
+   text-align: left;
+}
+#Card6-card-body
+{
+   padding: 0;
+   font-size: 0;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+#Card6-card-item0
+{
+   box-sizing: border-box;
+   margin: 0 0 -90px 0 ;
+   padding: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+}
+#Card6-card-item1
+{
+   box-sizing: border-box;
+   margin: 0 20px 0 20px;
+   border-top: 100px rgba(216,216,216,0.00) solid;
+   border-width: 100px 0 0 0;
+   height: 0;
+   line-height: 0;
+}
+#Card6-card-item2
+{
+   box-sizing: border-box;
+   margin: 20px 20px 0 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+}
+#Card6-card-item3
+{
+   box-sizing: border-box;
+   margin: 20px 20px 20px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+}
+#Card6-card-item4
+{
+   box-sizing: border-box;
+   margin: 0 20px 20px 20px;
+   padding: 0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 21px;
+}
+ .Card6
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   display: block;
+   max-width: 210px;
+   width: 210px;
+   height: 476px;
+}
+.Card6.popover .popover-arrow
+{
+   position: absolute;
+   display: block;
+   width: 1rem;
+   height: 0.5rem;
+   margin: 0 0.5rem;
+}
+.Card6.popover .popover-arrow::before, .Card6.popover .popover-arrow::after
+{
+   position: absolute;
+   display: block;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.Card6.bs-popover-end, .Card6.bs-popover-auto[x-placement^="right"]
+{
+   margin-left: 0.5rem;
+}
+.Card6.bs-popover-end > .popover-arrow, .Card6.bs-popover-auto[x-placement^="right"] > .popover-arrow 
+{
+   left: calc((0.5rem + 1px) * -1);
+   width: 0.5rem;
+   height: 1rem;
+   margin: 0.5rem 0;
+}
+.Card6.bs-popover-end > .popover-arrow::before, .Card6.bs-popover-auto[x-placement^="right"] > .popover-arrow::before
+{
+   left: 0;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #DEDEDE;
+}
+.Card6.bs-popover-end > .popover-arrow::after, .Card6.bs-popover-auto[x-placement^="right"] > .popover-arrow::after
+{
+   left: 1px;
+   border-width: 0.5rem 0.5rem 0.5rem 0;
+   border-right-color: #FFFFFF;
+}
+#wb_Card6:hover
+{
+   background-color: #FFFFFF;
+   border-color: #000000;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms, border-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#wb_Card6
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
