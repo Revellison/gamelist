@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>action</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
+<link href="css/RPG.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#logoLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_logoLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+});
+</script>
+<script>
+// Note: this code dynamically updates the 'Cart' text in the main menu (4th item)
+$(document).ready(function()
+{
+   $('#headerMenu li:nth-child(4)').click(function(e)
+   {
+      e.stopPropagation();
+      e.preventDefault();      
+      paypal.minicart.view.show();
+      paypal.minicart.view.redraw();
+   });
+   function updateCartText()
+   {
+      var total = 0;
+      paypal.minicart.cart.items().forEach(function(item) 
+      {
+         total += item._data.quantity;
+      });
+      if (total > 0)
+      {
+         $('#headerMenu li:nth-child(4) a').attr('data-total', '(' + total + ')');
+         
+      }
+      else
+      {
+         $('#headerMenu li:nth-child(4) a').attr('data-total', '(empty)');
+      }
+   }
+   updateCartText();
+   paypal.minicart.cart.on('add', function()
+   {
+      updateCartText();
+   });
+   paypal.minicart.cart.on('remove', function()
+   {
+      updateCartText();
+   });
+   paypal.minicart.cart.on('change', function()
+   {
+      updateCartText();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_logoLayoutGrid">
+<div id="logoLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_logoHeading" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="logoHeading">RPG</h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:1;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="./index.html"><i class="fa fa-home">&nbsp;</i>Home </a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_relatedLayoutGrid2">
+<div id="relatedLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_relatedCard1" style="display:flex;width:100%;z-index:2;overflow:hidden" class="card">
+   <div id="relatedCard1-card-body">
+      <img id="relatedCard1-card-item0" src="images/hades.jpg" width="460" height="215" alt="" title="">
+      <hr id="relatedCard1-card-item1">
+      <div id="relatedCard1-card-item2">Hades II</div>
+      <div id="relatedCard1-card-item3">Обуздайте тёмную магию и выйдите за пределы подземного мира, чтобы бросить вызов титану времени, в этом захватывающем продолжении титулованной игры в жанре rogue-like.</div>
+      <div id="relatedCard1-card-item4">$17.99</div>
+      <div id="relatedCard1-card-item5"><a href="https://store.steampowered.com/app/1145350/Hades_II/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card7" style="display:flex;width:100%;z-index:3;overflow:hidden" class="card">
+   <div id="Card7-card-body">
+      <img id="Card7-card-item0" src="images/onlinesky.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card7-card-item1">
+      <div id="Card7-card-item2">The Elder Scrolls® Online</div>
+      <div id="Card7-card-item3">Присоединяйтесь к 22 миллионам игроков в легендарной многопользовательской ролевой игре и участвуйте в событиях, разворачивающихся во вселенной Тамриэля</div>
+      <div id="Card7-card-item4">$15.99</div>
+      <div id="Card7-card-item5"><a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card8" style="display:flex;width:100%;z-index:4;overflow:hidden" class="card">
+   <div id="Card8-card-body">
+      <img id="Card8-card-item0" src="images/masseffect.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card8-card-item1">
+      <div id="Card8-card-item2">Mass Effect™</div>
+      <div id="Card8-card-item3">Mass Effect™ издание Legendary содержит весь контент и около 40 загружаемых материалов из ставших классикой игр Mass Effect, Mass Effect 2 и Mass Effect 3, а также оружие, броню и наборы из рекламных предложений. Издание оптимизировано под разрешение 4K Ultra HD.</div>
+      <div id="Card8-card-item4">$44.99</div>
+      <div id="Card8-card-item5"><a href="https://store.steampowered.com/app/1328670/Mass_Effect__Legendary/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card13" style="display:flex;width:100%;z-index:5;overflow:hidden" class="card">
+   <div id="Card13-card-body">
+      <img id="Card13-card-item0" src="images/albion.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card13-card-item1">
+      <div id="Card13-card-item2">Albion Online</div>
+      <div id="Card13-card-item3">Albion Online - это MMORPG-песочница в фэнтезийном сеттинге, где присутствует управляемая игроками экономика, боевая система без привязки к классам и постоянные PvP-сражения.</div>
+      <div id="Card13-card-item4">Free</div>
+      <div id="Card13-card-item5"><a href="https://store.steampowered.com/app/761890/Albion_Online/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:6;overflow:hidden" class="card">
+   <div id="Card1-card-body">
+      <img id="Card1-card-item0" src="images/baldurs.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card1-card-item1">
+      <div id="Card1-card-item2">Baldur's Gate 3</div>
+      <div id="Card1-card-item3">Соберите отряд и вернитесь в Забытые Королевства. Вас ждет история о дружбе и предательстве, выживании и самопожертвовании, о сладком зове абсолютной власти.</div>
+      <div id="Card1-card-item4">$29.99</div>
+      <div id="Card1-card-item5"><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card4" style="display:flex;width:100%;z-index:7;overflow:hidden" class="card">
+   <div id="Card4-card-body">
+      <img id="Card4-card-item0" src="images/stardew.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card4-card-item1">
+      <div id="Card4-card-item2">Stardew Valley</div>
+      <div id="Card4-card-item3">Вам досталась старая дедушкина ферма в долине Стардью. С горстью монет в кармане и старыми инструментами в руках вы начинаете новую жизнь. Сможете ли вы превратить пустырь в цветущий сад?</div>
+      <div id="Card4-card-item4">$5.00</div>
+      <div id="Card4-card-item5"><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card11" style="display:flex;width:100%;z-index:8;overflow:hidden" class="card">
+   <div id="Card11-card-body">
+      <img id="Card11-card-item0" src="images/arkas.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card11-card-item1">
+      <div id="Card11-card-item2">ARK: Survival Ascended<br></div>
+      <div id="Card11-card-item3">Арк переосмысливается с основания в этой технологии видеоигр с помощью Unreal Engine 5! Сформируйте племя, приручите и породу сотни уникальных динозавров и первобытных существ, исследуйте, создайте, строите, строите и пробитесь на вершину пищевой цепи.</div>
+      <div id="Card11-card-item4">$47.99</div>
+      <div id="Card11-card-item5"><a href="https://store.steampowered.com/app/2399830/ARK_Survival_Ascended/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card14" style="display:flex;width:100%;z-index:9;overflow:hidden" class="card">
+   <div id="Card14-card-body">
+      <img id="Card14-card-item0" src="images/terr.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card14-card-item1">
+      <div id="Card14-card-item2">Terraria</div>
+      <div id="Card14-card-item3">Копайте, сражайтесь, исследуйте, стройте! Нет ничего невозможного в этой насыщенной событиями приключенческой игре. Также доступен комплект для четверых!</div>
+      <div id="Card14-card-item4">$6.99</div>
+      <div id="Card14-card-item5"><a href="https://store.steampowered.com/app/105600/Terraria/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:10;overflow:hidden" class="card">
+   <div id="Card2-card-body">
+      <img id="Card2-card-item0" src="images/fallout.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card2-card-item1">
+      <div id="Card2-card-item2">Fallout 76</div>
+      <div id="Card2-card-item3">Bethesda Game Studios рада представить вам Fallout 76. Вы и другие жители Убежища возвращаетесь в Америку, какой она стала через двадцать пять лет после ядерной бомбардировки.</div>
+      <div id="Card2-card-item4">$30.00</div>
+      <div id="Card2-card-item5"><a href="https://store.steampowered.com/app/1151340/Fallout_76/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card6" style="display:flex;width:100%;z-index:11;overflow:hidden" class="card">
+   <div id="Card6-card-body">
+      <img id="Card6-card-item0" src="images/horizon.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card6-card-item1">
+      <div id="Card6-card-item2">Horizon Forbidden West™ Complete Edition</div>
+      <div id="Card6-card-item3">Исследуйте дальние земли, сражайтесь с все более гигантскими и внушающими трепет машинами.<br><br></div>
+      <div id="Card6-card-item4">$49.99</div>
+      <div id="Card6-card-item5"><a href="https://store.steampowered.com/app/2420110/___Horizon/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card9" style="display:flex;width:100%;z-index:12;overflow:hidden" class="card">
+   <div id="Card9-card-body">
+      <img id="Card9-card-item0" src="images/skyrim.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card9-card-item1">
+      <div id="Card9-card-item2">The Elder Scrolls V: Skyrim Special Edition</div>
+      <div id="Card9-card-item3">В игре The Elder Scrolls V: Skyrim Special Edition, получившей более 200 наград «Игра года», вас ждет удивительный мир, воссозданный с потрясающей детализацией. В издание Special Edition вошли базовая игра и дополнения, добавляющие в нее ряд новых возможностей.</div>
+      <div id="Card9-card-item4">$22.00</div>
+      <div id="Card9-card-item5"><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card15" style="display:flex;width:100%;z-index:13;overflow:hidden" class="card">
+   <div id="Card15-card-body">
+      <img id="Card15-card-item0" src="images/hogwarts.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card15-card-item1">
+      <div id="Card15-card-item2">Хогвартс. Наследие</div>
+      <div id="Card15-card-item3">«Хогвартс. Наследие» – это ролевая игра с открытым миром. Теперь вы можете контролировать свои действия и стать центральным героем собственных приключений в волшебном мире.</div>
+      <div id="Card15-card-item4">$49.99</div>
+      <div id="Card15-card-item5"><a href="https://store.steampowered.com/app/990080/_/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:14;overflow:hidden" class="card">
+   <div id="Card3-card-body">
+      <img id="Card3-card-item0" src="images/hades1.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card3-card-item1">
+      <div id="Card3-card-item2">Hades</div>
+      <div id="Card3-card-item3">Бросьте вызов богу мёртвых и прорубите себе путь из Подземного мира в игре в жанрах «рогалик» и «данжен-кроулер» от создателей Bastion, Transistor и Pyre.</div>
+      <div id="Card3-card-item4">$14.99</div>
+      <div id="Card3-card-item5"><a href="https://store.steampowered.com/app/1145360/Hades/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card5" style="display:flex;width:100%;z-index:15;overflow:hidden" class="card">
+   <div id="Card5-card-body">
+      <img id="Card5-card-item0" src="images/dogma2.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card5-card-item1">
+      <div id="Card5-card-item2">Dragon's Dogma 2</div>
+      <div id="Card5-card-item3">Dragon's Dogma 2 — это однопользовательская ролевая игра, где игрок может выбрать практически все: внешность своего Восставшего, профессию, партию, решения в различных ситуациях и многое другое. Погрузитесь в захватывающий фэнтезийный мир.</div>
+      <div id="Card5-card-item4">$74.99</div>
+      <div id="Card5-card-item5"><a href="https://store.steampowered.com/app/2054970/Dragons_Dogma_2/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card10" style="display:flex;width:100%;z-index:16;overflow:hidden" class="card">
+   <div id="Card10-card-body">
+      <img id="Card10-card-item0" src="images/diablo.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card10-card-item1">
+      <div id="Card10-card-item2">Diablo® IV</div>
+      <div id="Card10-card-item3">Вступите в бой за Санктуарий в знаменитой экшн-RPG Diablo® IV. Погрузитесь в получившую признание игроков сюжетную кампанию и исследуйте новый сезонный контент.</div>
+      <div id="Card10-card-item4">$74.99</div>
+      <div id="Card10-card-item5"><a href="https://store.steampowered.com/app/2344520/Diablo_IV/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card12" style="display:flex;width:100%;z-index:17;overflow:hidden" class="card">
+   <div id="Card12-card-body">
+      <img id="Card12-card-item0" src="images/valheim.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card12-card-item1">
+      <div id="Card12-card-item2">Valheim</div>
+      <div id="Card12-card-item3">Игра в жанре выживание, в которой вам предстоит исследовать огромный фэнтезийный мир, пропитанный скандинавской мифологией и культурой викингов.</div>
+      <div id="Card12-card-item4">$6.00</div>
+      <div id="Card12-card-item5"><a href="https://store.steampowered.com/app/892970/Valheim/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>action</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
+<link href="css/race.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#logoLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_logoLayoutGrid').offset().top }, 600, 'easeOutCirc');
+   });
+});
+</script>
+<script>
+// Note: this code dynamically updates the 'Cart' text in the main menu (4th item)
+$(document).ready(function()
+{
+   $('#headerMenu li:nth-child(4)').click(function(e)
+   {
+      e.stopPropagation();
+      e.preventDefault();      
+      paypal.minicart.view.show();
+      paypal.minicart.view.redraw();
+   });
+   function updateCartText()
+   {
+      var total = 0;
+      paypal.minicart.cart.items().forEach(function(item) 
+      {
+         total += item._data.quantity;
+      });
+      if (total > 0)
+      {
+         $('#headerMenu li:nth-child(4) a').attr('data-total', '(' + total + ')');
+         
+      }
+      else
+      {
+         $('#headerMenu li:nth-child(4) a').attr('data-total', '(empty)');
+      }
+   }
+   updateCartText();
+   paypal.minicart.cart.on('add', function()
+   {
+      updateCartText();
+   });
+   paypal.minicart.cart.on('remove', function()
+   {
+      updateCartText();
+   });
+   paypal.minicart.cart.on('change', function()
+   {
+      updateCartText();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_logoLayoutGrid">
+<div id="logoLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_logoHeading" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="logoHeading">Гонки</h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_navigationMenu" style="display:inline-block;width:100%;z-index:1;vertical-align:top;">
+<ul id="navigationMenu">
+<li><a href="./index.html"><i class="fa fa-home">&nbsp;</i>Home </a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_relatedLayoutGrid2">
+<div id="relatedLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_relatedCard1" style="display:flex;width:100%;z-index:2;overflow:hidden" class="card">
+   <div id="relatedCard1-card-body">
+      <img id="relatedCard1-card-item0" src="images/forza5.jpg" width="460" height="215" alt="" title="">
+      <hr id="relatedCard1-card-item1">
+      <div id="relatedCard1-card-item2">Forza Horizon 5</div>
+      <div id="relatedCard1-card-item3">Участвуйте в захватывающих гонках и исследуйте невероятно красивые просторы Мексики за рулем лучших автомобилей мира. Покорите суровую Сьерра-Нуэва в невероятном раллийном приключении Horizon. Требуется наличие игры Forza Horizon 5 (обновление продаётся отдельно).</div>
+      <div id="relatedCard1-card-item4">$45.99</div>
+      <div id="relatedCard1-card-item5"><a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card7" style="display:flex;width:100%;z-index:3;overflow:hidden" class="card">
+   <div id="Card7-card-body">
+      <img id="Card7-card-item0" src="images/carz.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card7-card-item1">
+      <div id="Card7-card-item2">CarX Drift Racing Online</div>
+      <div id="Card7-card-item3">CarX Drift Racing дает вам шанс окунуться в истинный мир дрифта. Объединяйтесь с друзьями, настраивайте свой автомобиль и жгите резину!</div>
+      <div id="Card7-card-item4">$9.00</div>
+      <div id="Card7-card-item5"><a href="https://store.steampowered.com/app/635260/CarX_Drift_Racing_Online/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card8" style="display:flex;width:100%;z-index:4;overflow:hidden" class="card">
+   <div id="Card8-card-body">
+      <img id="Card8-card-item0" src="images/asphalt.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card8-card-item1">
+      <div id="Card8-card-item2">Asphalt 9: Legends</div>
+      <div id="Card8-card-item3">Race in spectacular real-life locations with prestigious cars (Ferrari, Porsche, McLaren, etc.) to collect, upgrade, and customize. Experience action-packed gameplay that rewards skillful play and risk taking in single or multiplayer. Game updates are coming up with new cars, locations and features.</div>
+      <div id="Card8-card-item4">Free</div>
+      <div id="Card8-card-item5"><a href="https://store.steampowered.com/app/1815780/Asphalt_9_Legends/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card13" style="display:flex;width:100%;z-index:5;overflow:hidden" class="card">
+   <div id="Card13-card-body">
+      <img id="Card13-card-item0" src="images/crew2.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card13-card-item1">
+      <div id="Card13-card-item2">The Crew™ 2</div>
+      <div id="Card13-card-item3">Мир моторного спорта США ждет! Лидируйте в состязаниях на суше, на море и в небе. Никаких границ! Участвуйте в состязаниях на любой вкус на различной технике: от машин и мотоциклов до моторных лодок и самолетов.</div>
+      <div id="Card13-card-item4">$27.99</div>
+      <div id="Card13-card-item5"><a href="https://store.steampowered.com/app/646910/The_Crew_2/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:6;overflow:hidden" class="card">
+   <div id="Card1-card-body">
+      <img id="Card1-card-item0" src="images/beamng.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card1-card-item1">
+      <div id="Card1-card-item2">BeamNG.drive</div>
+      <div id="Card1-card-item3">Основанный на физике мягких объектов автомобильный симулятор, способный практически на всё.<br><br><br><br><br></div>
+      <div id="Card1-card-item4">$7.99</div>
+      <div id="Card1-card-item5"><a href="https://store.steampowered.com/app/284160/BeamNGdrive/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card4" style="display:flex;width:100%;z-index:7;overflow:hidden" class="card">
+   <div id="Card4-card-body">
+      <img id="Card4-card-item0" src="images/mostwanted.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card4-card-item1">
+      <div id="Card4-card-item2">Need for Speed™ Most Wanted</div>
+      <div id="Card4-card-item3">Пристегнулись? Вперед, сеять хаос!<br><br><br><br><br></div>
+      <div id="Card4-card-item4">$16.99</div>
+      <div id="Card4-card-item5"><a href="https://store.steampowered.com/app/1262560/Need_for_Speed_Most_Wanted/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card11" style="display:flex;width:100%;z-index:8;overflow:hidden" class="card">
+   <div id="Card11-card-body">
+      <img id="Card11-card-item0" src="images/grid.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card11-card-item1">
+      <div id="Card11-card-item2">GRID Legends</div>
+      <div id="Card11-card-item3">GRID Legends — это захватывающие гонки, проходящие по всему земному шару. Создавайте гонки мечты, участвуйте в сетевых событиях, пройдите драматический сюжет и наслаждайтесь зрелищностью автоспортивных состязаний.</div>
+      <div id="Card11-card-item4">$45.00</div>
+      <div id="Card11-card-item5"><a href="https://store.steampowered.com/app/1307710/GRID_Legends/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card14" style="display:flex;width:100%;z-index:9;overflow:hidden" class="card">
+   <div id="Card14-card-body">
+      <img id="Card14-card-item0" src="images/unbound.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card14-card-item1">
+      <div id="Card14-card-item2">Need for Speed™ Unbound</div>
+      <div id="Card14-card-item3">Покорите вершину без шума и пыли. Перехитрите копов и участвуйте в еженедельных квалификационных заездах, чтобы добраться до Гранд-заезда — главной уличной гонки.</div>
+      <div id="Card14-card-item4">$50.99</div>
+      <div id="Card14-card-item5"><a href="https://store.steampowered.com/app/1846380/Need_for_Speed_Unbound/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:10;overflow:hidden" class="card">
+   <div id="Card2-card-body">
+      <img id="Card2-card-item0" src="images/forza4.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card2-card-item1">
+      <div id="Card2-card-item2">Forza Horizon 4</div>
+      <div id="Card2-card-item3">Времена года полностью меняют облик главного автомобильного фестиваля планеты. Исследуйте чудесные пейзажи и исторические достопримечательности Великобритании, путешествуя по открытому миру в одиночку или вместе с другими игроками.</div>
+      <div id="Card2-card-item4">$15.99</div>
+      <div id="Card2-card-item5"><a href="https://store.steampowered.com/app/1293830/Forza_Horizon_4/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card6" style="display:flex;width:100%;z-index:11;overflow:hidden" class="card">
+   <div id="Card6-card-body">
+      <img id="Card6-card-item0" src="images/crossout.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card6-card-item1">
+      <div id="Card6-card-item2">Crossout</div>
+      <div id="Card6-card-item3">CROSSOUT - постапокалиптический MMO-экшн, в котором вы сможете собрать из десятков деталей бронемашину уникального дизайна, и сразиться на ней в жарких многопользовательских боях.</div>
+      <div id="Card6-card-item4">Free</div>
+      <div id="Card6-card-item5"><a href="https://store.steampowered.com/app/386180/Crossout/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card9" style="display:flex;width:100%;z-index:12;overflow:hidden" class="card">
+   <div id="Card9-card-body">
+      <img id="Card9-card-item0" src="images/need.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card9-card-item1">
+      <div id="Card9-card-item2">Need for Speed™</div>
+      <div id="Card9-card-item3">Вырывайтесь вперёд<br><br><br><br><br><br><br></div>
+      <div id="Card9-card-item4">$8.99</div>
+      <div id="Card9-card-item5"><a href="https://store.steampowered.com/app/1262540/Need_for_Speed/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card15" style="display:flex;width:100%;z-index:13;overflow:hidden" class="card">
+   <div id="Card15-card-body">
+      <img id="Card15-card-item0" src="images/grip.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card15-card-item1">
+      <div id="Card15-card-item2">GRIP: Combat Racing</div>
+      <div id="Card15-card-item3">GRIP - это крутой высокооктановый боевой гоночный болид, упакованный тяжелым вооружением и гоняющий на сумасшедшей скорости.</div>
+      <div id="Card15-card-item4">$8.99</div>
+      <div id="Card15-card-item5"><a href="https://store.steampowered.com/app/396900/GRIP_Combat_Racing/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:14;overflow:hidden" class="card">
+   <div id="Card3-card-body">
+      <img id="Card3-card-item0" src="images/nfsheat.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card3-card-item1">
+      <div id="Card3-card-item2">Need for Speed™ Heat</div>
+      <div id="Card3-card-item3">Устраивайте гонки днём и ставьте на кон всё ночью в издании Deluxe Need for Speed™ Heat — захватывающей дух игре об уличных гонках, где закон меняется с заходом солнца.</div>
+      <div id="Card3-card-item4">$25.99</div>
+      <div id="Card3-card-item5"><a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card5" style="display:flex;width:100%;z-index:15;overflow:hidden" class="card">
+   <div id="Card5-card-body">
+      <img id="Card5-card-item0" src="images/wreckfest.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card5-card-item1">
+      <div id="Card5-card-item2">Wreckfest</div>
+      <div id="Card5-card-item3">Эпические столкновения, нешуточная борьба до самого финиша и миллион способов гнуть и корежить металл - вот что ждет вас в Wreckfest</div>
+      <div id="Card5-card-item4">$13.99</div>
+      <div id="Card5-card-item5"><a href="https://store.steampowered.com/app/228380/Wreckfest/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card10" style="display:flex;width:100%;z-index:16;overflow:hidden" class="card">
+   <div id="Card10-card-body">
+      <img id="Card10-card-item0" src="images/rivals.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card10-card-item1">
+      <div id="Card10-card-item2">Need for Speed™ Rivals</div>
+      <div id="Card10-card-item3">Получите максимум впечатлений от игры с полным набором Need for Speed™ Rivals.<br><br><br><br><br><br><br></div>
+      <div id="Card10-card-item4">$16.99</div>
+      <div id="Card10-card-item5"><a href="https://store.steampowered.com/app/1262600/Need_for_Speed_Rivals/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+<div id="wb_Card12" style="display:flex;width:100%;z-index:17;overflow:hidden" class="card">
+   <div id="Card12-card-body">
+      <img id="Card12-card-item0" src="images/flaout4.jpg" width="460" height="215" alt="" title="">
+      <hr id="Card12-card-item1">
+      <div id="Card12-card-item2">FlatOut 4: Total Insanity</div>
+      <div id="Card12-card-item3">FlatOut 4: Total Insanity™, where reckless driving has never been this much fun. FlatOut 4: Total Insanity™ blends everything everyone has ever loved about FlatOut into one offering.</div>
+      <div id="Card12-card-item4">$17.99</div>
+      <div id="Card12-card-item5"><a href="https://store.steampowered.com/app/402130/FlatOut_4_Total_Insanity/" title="Quick View"><i class="fa fa-search"></i>&nbsp;&nbsp;Quick View</a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
