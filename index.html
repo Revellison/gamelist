@@ -3,23 +3,74 @@
 <head>
 <meta charset="utf-8">
 <title>Безымянная страница</title>
-<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="generator" content="WYSIWYG Web Builder 19 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/site.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/wb.overlay.min.js"></script>
-<script src="js/wb.drilldownmenu.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var trendingCard1 = new bootstrap.Popover("#",
+   {
+      content: function()
+      {
+         return document.querySelector('#wb_trendingCard1').innerHTML;
+      },
+      html : true,
+      placement: 'right',
+      template: '<div class="popover trendingCard1" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
+      title: '',
+      trigger: 'hover'
+   });
+   var Card8 = new bootstrap.Popover("#",
+   {
+      content: function()
+      {
+         return document.querySelector('#wb_Card8').innerHTML;
+      },
+      html : true,
+      placement: 'right',
+      template: '<div class="popover Card8" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
+      title: '',
+      trigger: 'hover'
+   });
+   var Card1 = new bootstrap.Popover("#",
+   {
+      content: function()
+      {
+         return document.querySelector('#wb_Card1').innerHTML;
+      },
+      html : true,
+      placement: 'right',
+      template: '<div class="popover Card1" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
+      title: '',
+      trigger: 'hover'
+   });
+   var Card2 = new bootstrap.Popover("#",
+   {
+      content: function()
+      {
+         return document.querySelector('#wb_Card2').innerHTML;
+      },
+      html : true,
+      placement: 'right',
+      template: '<div class="popover Card2" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
+      title: '',
+      trigger: 'hover'
+   });
+});
+</script>
 <script>
 $(document).ready(function()
 {
-   $('#OverlayMenu1-overlay').overlay({});
-   $('.OverlayMenu1').drilldownmenu({backText: 'Back'});
-   $('#OverlayMenu1').on('click', function(e)
+   $("a[href*='#trendingLayoutGrid2']").click(function(event)
    {
-      $.overlay.show($('#OverlayMenu1-overlay'));
-      return false;
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_trendingLayoutGrid2').offset().top-57 }, 600, 'easeOutSine');
    });
 });
 </script>
@@ -32,14 +83,6 @@ $(document).ready(function()
 <div id="menuphone">
 <div class="row">
 <div class="col-1">
-<div id="wb_OverlayMenu1" style="display:inline-block;width:46px;height:45px;z-index:1;">
-<a href="#" id="OverlayMenu1">
-<span class="line"></span>
-<span class="line">
-</span><span class="line"></span>
-</a>
-
-</div>
 </div>
 </div>
 </div>
@@ -50,16 +93,10 @@ $(document).ready(function()
 <div id="wb_categoriesText2">
 <span style="color:#808080;font-family:Arial;font-size:13px;">Погрузитесь в мир развлечений и откройте для себя новые игровые возможности прямо сейчас!</span>
 </div>
-<div id="wb_Text1">
-<span style="color:#DCDCDC;font-family:Arial;font-size:13px;">Включить версию для мобильных игр</span>
-</div>
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="row">
 <div class="col-1">
-<div id="wb_Icon1" style="display:inline-block;width:36px;height:33px;text-align:center;z-index:2;">
-<a href="./mobilever/indexmobile.html"><div id="Icon1"><i class="fa fa-tablet"></i></div></a>
-</div>
 </div>
 </div>
 </div>
@@ -85,124 +122,99 @@ $(document).ready(function()
 <div id="pcversion">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:9;">
+<div id="wb_Image5" style="display:block;width:100%;height:auto;z-index:4;">
 <a href="./strategy.html"><img src="images/strategy.jpg" id="Image5" alt="" width="396" height="223"></a><div id="Image5-overlay">Стратегия</div>
 
 </div>
-<div id="wb_Image15" style="display:inline-block;width:100%;height:auto;z-index:10;">
+<div id="wb_Image15" style="display:block;width:100%;height:auto;z-index:5;">
 <a href="./race.html"><img src="images/gonki11.jpg" id="Image15" alt="" width="396" height="223"></a><div id="Image15-overlay">Гонки</div>
 
 </div>
-<div id="wb_Image16" style="display:inline-block;width:100%;height:auto;z-index:11;">
+<div id="wb_Image16" style="display:block;width:100%;height:auto;z-index:6;">
 <a href="./adventures.html"><img src="images/advwnrute2.jpg" id="Image16" alt="" width="396" height="223"></a><div id="Image16-overlay">Приключения</div>
 
 </div>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image9" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<div id="wb_Image9" style="display:block;width:100%;height:auto;z-index:7;">
 <a href="./action.html"><img src="images/action2.jpg" id="Image9" alt="" width="396" height="223"></a><div id="Image9-overlay">Экшен</div>
 
 </div>
-<div id="wb_Image13" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<div id="wb_Image13" style="display:block;width:100%;height:auto;z-index:8;">
 <a href="./casual.html"><img src="images/casual.jpg" id="Image13" alt="" width="396" height="223"></a><div id="Image13-overlay">Казуальные</div>
 
 </div>
-<div id="wb_Image14" style="display:inline-block;width:100%;height:auto;z-index:14;">
+<div id="wb_Image14" style="display:block;width:100%;height:auto;z-index:9;">
 <a href="./RPG.html"><img src="images/rpg.jpg" id="Image14" alt="" width="396" height="223"></a><div id="Image14-overlay">RPG</div>
 
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image10" style="display:inline-block;width:100%;height:auto;z-index:15;">
+<div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:10;">
 <a href="./horror.html"><img src="images/horror.jpg" id="Image10" alt="" width="396" height="223"></a><div id="Image10-overlay">Хоррор</div>
 
 </div>
-<div id="wb_Image11" style="display:inline-block;width:100%;height:auto;z-index:16;">
+<div id="wb_Image11" style="display:block;width:100%;height:auto;z-index:11;">
 <a href="./indi.html"><img src="images/video-games-Cuphead-Video-Game-artwork-1336839.jpg" id="Image11" alt="" width="396" height="223"></a><div id="Image11-overlay">Инди</div>
 
 </div>
-<div id="wb_Image12" style="display:inline-block;width:100%;height:auto;z-index:17;">
+<div id="wb_Image12" style="display:block;width:100%;height:auto;z-index:12;">
 <a href="./simulator.html"><img src="images/simulator.jpg" id="Image12" alt="" width="396" height="223"></a><div id="Image12-overlay">Симулятор</div>
 
 </div>
 </div>
 </div>
 </div>
-<div id="OverlayMenu1-overlay">
-<div class="OverlayMenu1">
-<ul class="drilldown-menu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-home overlay-icon"></i>Home</a></li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-book overlay-icon"></i>Blog</a>
-<ul class="drilldown-submenu" role="menu">
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-eye overlay-icon"></i>Design</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-html5 overlay-icon"></i>HTML</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-css3 overlay-icon"></i>CSS</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-code overlay-icon"></i>JavaScript</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-gear overlay-icon"></i>Work</a>
-<ul class="drilldown-submenu" role="menu">
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-desktop overlay-icon"></i>Web&nbsp;Design</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-picture-o overlay-icon"></i>Typography</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-<li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-envelope overlay-icon"></i>Applications</a>
-<ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;1</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;2</a></li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Sub&nbsp;Menu&nbsp;3</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-user overlay-icon"></i>About</a></li>
-   </ul>
+<div id="wb_trendingLayoutGrid2">
+<div id="trendingLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_trendingCard1" style="display:flex;width:100%;z-index:13;overflow:hidden" class="card" onclick="window.location.href='https://store.steampowered.com/app/2479810/Gray_Zone_Warfare/';return false;">
+<div id="trendingCard1-card-body">
+<img id="trendingCard1-card-item0" src="images/gray zone.jpg" width="460" height="215" alt="" title="">
+<hr id="trendingCard1-card-item1">
+<div id="trendingCard1-card-item2">Gray Zone Warfare</div>
+<div id="trendingCard1-card-item3">Gray Zone Warfare — это динамичный тактический шутер от первого лица с упором на реализм.</div>
+<div id="trendingCard1-card-item4">$19.99</div>
 </div>
-<a class="close-button" id="OverlayMenu1-close" href="#" role="button" aria-hidden="true"><span></span></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card8" style="display:flex;width:100%;z-index:14;overflow:hidden" class="card" onclick="window.location.href='https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/';return false;">
+<div id="Card8-card-body">
+<img id="Card8-card-item0" src="images/ea.jpg" width="460" height="215" alt="" title="">
+<hr id="Card8-card-item1">
+<div id="Card8-card-item2">EA SPORTS FC™ 24</div>
+<div id="Card8-card-item3">EA SPORTS FC™ 24 приветствует вас во всемирной игре: вас ждет самый реалистичный футбол с технологией HyperMotionV, игровыми стилями от компании Opta и улучшенным графическим движком Frostbite™</div>
+<div id="Card8-card-item4">$13.99</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:15;overflow:hidden" class="card" onclick="window.location.href='https://store.steampowered.com/app/553850/HELLDIVERS_2/';return false;">
+<div id="Card1-card-body">
+<img id="Card1-card-item0" src="images/helldivers.jpg" width="460" height="215" alt="" title="">
+<hr id="Card1-card-item1">
+<div id="Card1-card-item2">HELLDIVERS</div>
+<div id="Card1-card-item3">Последняя линяя нападения галактики. Станьте Адским Десантником и сражайтесь за свободу по всему враждебному космосу в динамичном, безумном и беспощадном шутере с видом от третьего лица.</div>
+<div id="Card1-card-item4">$39.99</div>
+</div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:16;overflow:hidden" class="card" onclick="window.location.href='https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/';return false;">
+<div id="Card2-card-body">
+<img id="Card2-card-item0" src="images/warhammer.jpg" width="460" height="215" alt="" title="">
+<hr id="Card2-card-item1">
+<div id="Card2-card-item2">Total War: WARHAMMER III</div>
+<div id="Card2-card-item3">Финал трилогии Total War: WARHAMMER уже здесь. Соберите войска и войдите в Царство Хаоса — обитель невообразимых ужасов, где будет решаться судьба всего мира. Обуздаете ли вы своих демонов… или же возглавите их?</div>
+<div id="Card2-card-item4">$59.99</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>

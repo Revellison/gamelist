@@ -18,20 +18,10 @@
    0% { background-position: 100% 100%;  }
    100% { background-position: 0% 0%;  }
 }
-@keyframes filter-blur-in
-{
-   0% { filter: blur(20px);  }
-   100% { filter: blur(0);  }
-}
 @keyframes focus-in
 {
    0% { filter: blur(20px); opacity: 0.0;  }
    100% { opacity: 1.0; filter: blur(0);  }
-}
-@keyframes pop
-{
-   0% { transform: perspective(1px) rotateX(0deg) scale3d(1,1,1) ;  }
-   100% { transform: perspective(1px) rotateX(0deg) scale3d(1.2,1.2,1.2) ;  }
 }
 @keyframes transform-scale-in
 {
